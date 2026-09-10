@@ -12,7 +12,7 @@ function Profile() {
       setError('You must be logged in to view this page')
       return
     }
-    fetch('http://auth-system-twnl.onrender.com/api/profile', {
+    fetch('https://auth-system-twnl.onrender.com/api/profile', {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((res) => {
